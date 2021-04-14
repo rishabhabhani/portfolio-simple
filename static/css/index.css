@@ -1,0 +1,285 @@
+:root {
+  --primary: #75040F;
+  --primary-dark: #25283D;
+  --secondary: #B9E6FF;
+  --secondary-dark: #0E7CB3;
+  --accent: #FF3366;
+}
+
+.row {
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+body {
+  background-color: var(--secondary);
+}
+
+section {
+  padding: 5%;
+}
+
+.intro-section {
+  background-color: var(--primary-dark);
+  color: var(--accent);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+
+.intro-section h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: var(--secondary);
+}
+
+.intro-section h2 {
+  font-size: 2.5rem;
+  text-decoration: underline solid 2px var(--secondary);
+}
+
+.intro-section h3 {
+  font-size: 2rem;
+}
+
+.nav-space {
+  width: 100%;
+  height: calc(3rem + 30px);
+}
+
+#navigator {
+  position: static;
+  width: 100%;
+  background-color: var(--secondary);
+  z-index: 100;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  display: none;
+  margin-bottom: 0px;
+  font-size: 1rem;
+  color: var(--primary-dark);
+  font-weight: bold;
+  margin-left: 15px;
+  opacity: 0;
+}
+
+.nav-button-holder {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: right;
+}
+
+.nav-button {
+  margin: 15px 15px;
+  width: 50%;
+  height: 3rem;
+
+  border: 3px solid var(--primary-dark);
+  background-color: var(--secondary);
+  color: var(--primary-dark);
+
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-button:hover {
+  color: var(--secondary);
+  background-color: var(--primary-dark);
+}
+
+.section-seperator {
+  border-top: dotted var(--secondary-dark) 10px;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-section {
+  padding: 0%;
+}
+
+.about-section h1 {
+  margin-left: 5%;
+}
+
+.about-content {
+  margin: 5% 0;
+  background-color: var(--primary-dark);
+  padding: 5%;
+  font-size: 1.15rem;
+  color: var(--secondary);
+}
+
+.code-section h4 {
+  color: var(--primary-dark);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.code-section .col {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.code-card {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px 8px;
+  margin-bottom: 5px;
+
+  background-color: var(--primary-dark);
+  color: var(--secondary);
+
+  font-size: 0.75rem;
+  font-weight: bold;
+  /* box-shadow: 4px 4px 1px 1px var(--secondary-dark); */
+}
+
+.code-card p {
+  margin-bottom: 0px;
+}
+
+.rated {
+  display: inline;
+  color: var(--accent);
+}
+
+.education-section .col{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.education-card {
+  text-align: center;
+  margin: 10px 0px;
+  border: 2px solid var(--primary-dark);
+}
+
+.education-card h2{
+  background-color: var(--primary-dark);
+  color: var(--secondary);
+  padding: 10px;
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+
+.education-info {
+  padding: 10px;
+  color: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
+}
+
+.contact-section {
+  padding: 0%;
+}
+
+.contact-section h1 {
+  margin-left: 5%;
+}
+
+.about-content {
+  margin: 5% 0;
+  background-color: var(--primary-dark);
+  padding: 5%;
+  font-size: 1.15rem;
+  color: var(--secondary);
+}
+
+.contact-content {
+  margin: 5% 0;
+  padding: 5%;
+
+  background-color: var(--primary-dark);
+  color: var(--secondary);
+}
+
+.contact-button {
+  width: 100%;
+  height: 4rem;
+  margin-top: 24px;
+
+  border: 4px solid var(--secondary);
+  color: var(--secondary);
+  background-color: var(--primary-dark);
+
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  background-color: var(--secondary);
+  color: var(--primary-dark);
+}
+
+.social-content {
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-link-button {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+
+  background-color: var(--secondary);
+  border-radius: 0px;
+
+  font-size: 1.75rem;
+  color: var(--primary-dark);
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--primary-dark);
+  color: var(--secondary);
+  line-height: 2rem;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.footer span {
+  color: var(--accent);
+}
+
+@media only screen and (orientation: landscape){
+  .contact-button {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}

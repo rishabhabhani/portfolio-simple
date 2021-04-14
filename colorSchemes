@@ -1,0 +1,23 @@
+  --primary: #FF2037;
+  --primary-dark: #75040F;
+  --secondary: #08ADFF;
+  --secondary-dark: #0E7CB3;
+  --accent: #FFF830;
+
+  --primary: #F03F3C;
+  --primary-dark: #A33331;
+  --secondary: #F0D619;
+  --secondary-dark: #B3A010;
+  --accent: #30BDF0;
+
+  --primary: #8DA8E3;
+  --primary-dark: #4E6596;
+  --secondary: #E3C98D;
+  --secondary-dark: #967C3F;
+  --accent: #B8CEFF;
+
+  --primary: #75040F;
+  --primary-dark: #25283D;
+  --secondary: #B9E6FF;
+  --secondary-dark: #0E7CB3;
+  --accent: #FF3366;
